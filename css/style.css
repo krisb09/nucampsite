@@ -35,3 +35,22 @@ header h2 {
     background-color: #901CAD;
 }
 
+
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+button.btn:hover {
+    background-color: rgba(214, 4, 251, 0.621);
+}
+
+
+
+
+

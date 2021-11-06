@@ -17,8 +17,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-
-
     <title>NuCamp: A Better Way To Camp</title>
 </head>
 
@@ -34,6 +32,9 @@
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div> 
+                <div class="col col-md-4 col-xl-2 mt-4">
+                    <button type="button" class="btn btn-info btn-lg"><a href="#reserveForm">Reserve Campsite</a></button>
+                </div>
             </div>
         </div>
     </header>
@@ -78,16 +79,22 @@
                 </div>
             </div>
         </div>
-    
+        
+        <!-- WORKSHOP 2 TASK 1-->
         <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
                 <h2 class="text-sm-right">Featured Campsites</h2>
             </div>
             <div class="col">
-                <h3>React Lake Campground</h3>
-                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                <div class="media">
+                    <div class="media-body align-self-center">
+                        <h3>React Lake Campground</h3>
+                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                    </div>
+                    <img class="d-flex img-thumbnail mr-3 ml-auto" src="img/react-lake-thumb.jpg" alt="">
+                </div>
             </div>
-        </div>
+        
     
         <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
@@ -102,6 +109,46 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Workshop 2 TASK 2 -->
+
+        <div class="row row-content mx-auto"  style="width: 500px;">
+            <div class="col">
+                <div class="card">
+                    <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+                    <div class="card-body">
+                        <form id="reserveForm">
+                            <div class="row form-group">
+                                <label class="col col-form-label" for="">Number of campers</label>
+                                    <div class="col-sm-6">
+                                        <select class="form-control" name="nuCampers" id="nuCampers">
+                                            <option>Select...</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>
+                                    </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col col-form-label" for="date">Date</label>
+                                <div class="col-sm-6">
+                                    <input class="form-control" id="date" type="date" name="date" placeholder="mm/dd/yyy">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col">
+                                    <button class="btn btn-primary" type="submit">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
 
@@ -124,7 +171,7 @@
                     <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
                     <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
                 </div>
-               
+                
                 <div class="col-sm-4 text-center">
                     <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br />
                     <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
