@@ -26,14 +26,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                    <a href="index.html"><img src="img/logo.png" class="img-fluid" alt="" /></a>
+                    <a href="index.html"><img src="img/logo.png" class="img-fluid" alt="logo" /></a>
                 </div>         
                 <div class="col">
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div> 
                 <div class="col col-md-4 col-xl-2 mt-4">
-                    <button type="button" class="btn btn-info btn-lg"><a class="text-nowrap" href="#reserveForm">Reserve Campsite</a></button>
+                    <!-- <button type="button" class="btn btn-info btn-lg"><a class="text-nowrap" href="#reserveForm">Reserve Campsite</a></button> -->
+                    <a href="#reserveForm" class="btn btn-info btn-lg text-nowrap" role="button">Reserve Campsite</a>
                 </div>
             </div>
         </div>
@@ -120,7 +121,7 @@
                     <div class="card-body">
                         <form id="reserveForm">
                             <div class="row form-group">
-                                <label class="col col-form-label" for="">Number of campers</label>
+                                <label class="col col-form-label" for="nuCampers">Number of campers</label>
                                     <div class="col-sm-6">
                                         <select class="form-control" name="nuCampers" id="nuCampers">
                                             <option>Select...</option>
@@ -136,7 +137,8 @@
                             <div class="row form-group">
                                 <label class="col col-form-label" for="date">Date</label>
                                 <div class="col-sm-6">
-                                    <input class="form-control" id="date" type="date" name="date" placeholder="mm/dd/yyy">
+                                    <!-- <input class="form-control" id="date" type="date" name="date" placeholder="mm/dd/yyyy"> -->
+                                    <input class="form-control" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
                                 </div>
                             </div>
                             <div class="row form-group">
