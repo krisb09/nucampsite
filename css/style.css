@@ -38,10 +38,11 @@ header h2 {
 
 
 a {
-    color: #fff;
+    color:black;
+    text-decoration: none;
 }
 
-a:hover {
+a>.reserveText:hover {
     color:rgb(255, 255, 255);
     text-decoration: none;
 }
@@ -56,6 +57,7 @@ button.btn:hover {
     padding: 10px;
 }
 
-
-
+a.title.collapsed {
+    text-decoration: none;
+}
 
