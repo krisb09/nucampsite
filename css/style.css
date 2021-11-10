@@ -50,6 +50,11 @@ button.btn:hover {
     background-color: rgba(214, 4, 251, 0.621);
 }
 
+.tab-content {
+    border: 1px solid #DDD;
+    border-top: none;
+    padding: 10px;
+}
 
 
 
