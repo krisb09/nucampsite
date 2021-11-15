@@ -74,6 +74,12 @@ a.title.collapsed {
     margin-left: 159px;
 }
 
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
 /* .modal-body {
     background: url(../img/chrome-river.jpg)
     
