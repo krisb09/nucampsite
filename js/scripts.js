@@ -1,6 +1,22 @@
+
+
+$(function() {
+    $("#reserveButton").on('click',function() {
+        $("#reserveModal").modal("show");
+    });
+});
+
+$(function() {
+    $("#loginButton").on('click',function() {
+        $("#loginModal").modal("show");
+    });
+});
+
+
+
 $(function() {
     $(".carousel").carousel( { interval: 1000 } );
-    $("#carouselButton").click(function(){
+    $("#carouselButton").on('click',function(){
        if ($("#carouselButton").children("i").hasClass("fa-pause")) {
            $(".carousel").carousel("pause");
            $("#carouselButton").children("i").removeClass("fa-pause");

@@ -1,3 +1,4 @@
+$color-teal: #17A2B8;
 $color-primary: #3046c5;
 $color-secondary: #5637DD;
 $color-pale: #cec8ff;
@@ -95,11 +96,18 @@ a.title.collapsed {
     bottom: 0;
     z-index: 100;
 }
-/* .modal-body {
-    background: url(../img/chrome-river.jpg)
-    
+
+
+#reserveModal {
+    .modal-header {
+        background-color: $color-teal;
+        color: white;
+    }
 }
 
-label {
-    color: whitesmoke
-} */
+#loginModal {
+    .modal-header {
+        background-color: $color-mid;
+        color: white;
+    }
+}
